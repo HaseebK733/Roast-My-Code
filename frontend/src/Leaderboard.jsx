@@ -62,7 +62,7 @@ function Leaderboard() {
 
                         <p className="roast-content">"{item.roast_text}"</p>
 
-                        {/* Fixed the double curly braces here */}
+                        
                         <button className="view-code-btn" onClick={() => toggleCode(item.id)}>
                             {openId === item.id ? "Hide Code" : "View the Evidence"}
                         </button>
@@ -74,7 +74,7 @@ function Leaderboard() {
                                     style={oneDark}
                                     customStyle={{ maxHeight: '200px', fontSize: '0.8rem', borderRadius: '8px' }}
                                 >
-                                    {/* Ensure your backend sends 'code_input' */}
+                                    {/* Ensure backend sends 'code_input' */}
                                     {item.code_snippet || "// No code was provided"}
                                 </SyntaxHighlighter>
                             </div>

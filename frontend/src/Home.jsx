@@ -66,7 +66,7 @@ const formattedOriginalCode = Code?.replaceAll('\\n', '\n');
         {Loading ? "Roasting..." : "Roast Me !!!"}
       </button>
 
-      {/* Notice everything AI-related is now inside this conditional block */}
+      {/* Conditional Block for AI-Related stuff*/}
       {Result && (
         <div className="result-display">
           <div className="roast-header">
