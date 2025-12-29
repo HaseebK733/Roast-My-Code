@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import Home from './home';
+import Home from './Home';
 import Leaderboard from './Leaderboard';
 
 function App(){
