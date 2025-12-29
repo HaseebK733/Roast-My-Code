@@ -11,7 +11,7 @@ function Home() {
   const handleRoast = async () => {
     SetLoading(true);
     try {
-      const response = await fetch("https://roast-my-code-python-server.onrender.com/", {
+      const response = await fetch("https://roast-my-code-python-server.onrender.com/roast", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code: Code }),
