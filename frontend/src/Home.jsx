@@ -2,11 +2,13 @@ import { useState } from "react";
 import './App.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { CheckCircle } from 'lucide-react';
 
 function Home() {
   const [Code, SetCode] = useState("");
   const [Result, SetResult] = useState(null);
   const [Loading, SetLoading] = useState(false);
+  const [ShowToast, SetShowToast] = useState(false);
 
   const handleRoast = async () => {
     SetLoading(true);
@@ -28,7 +30,9 @@ function Home() {
   const copyToClipboard = () => {
     if (Result && Result.fixed_code) {
       navigator.clipboard.writeText(Result.fixed_code);
-      alert("Fixed code copied to clipboard! 📋");
+      SetShowToast(true); //triggers the toast
+
+      setTimeout(() => SetShowToast(false), 3000); //hides it after 3s
     }
   };
 
@@ -94,7 +98,15 @@ const formattedOriginalCode = Code?.replaceAll('\\n', '\n');
           </div>
         </div>
       )}
+       {ShowToast && (
+    <div className="toast-notification">
+    <CheckCircle size={18} color="#2ed573" />
+    <span>Code copied to clipboard!</span>
     </div>
+  )}
+    </div>
+
+   
   );
 }
 
