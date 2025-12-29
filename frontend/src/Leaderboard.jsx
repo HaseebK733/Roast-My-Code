@@ -14,7 +14,7 @@ function Leaderboard() {
     };
 
     const fetchLeaderboard = async () => {
-        const response = await fetch("https://roast-my-code-python-server.onrender.com/");
+        const response = await fetch("https://roast-my-code-python-server.onrender.com/leaderboard");
         const data = await response.json();
         setRoasts(data);
     };
