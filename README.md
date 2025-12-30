@@ -1,3 +1,7 @@
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://roast-my-code-taupe.vercel.app/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://roast-my-code-python-server.onrender.com)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+
 # Roast-My-Code
 Upload your trash, get the truth. A full-stack AI platform that critiques code quality with a savage personality.
 
