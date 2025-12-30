@@ -5,8 +5,11 @@
 # Roast-My-Code
 Upload your trash, get the truth. A full-stack AI platform that critiques code quality with a savage personality.
 
+![Animation-ezgif com-optimize](https://github.com/user-attachments/assets/5f51d54f-22e7-4bcc-9083-e5af16d9a676)
+
+
 ## 🚀 Features
-- **AI Code Critique:** Real-time roasts powered by Openai API v1 (via Groq).
+- **AI Code Critique:** Real-time roasts powered by openai/gpt-oss-120b (via Groq).
 - **Side-by-Side Comparison:** View your "trash" vs. the "fix" with syntax highlighting.
 - **Hall of Shame:** A persistent leaderboard of the worst code submissions.
 - **Interactive UI:** Custom toast notifications, collapsible evidence blocks, and responsive grid layouts.
@@ -25,7 +28,7 @@ Upload your trash, get the truth. A full-stack AI platform that critiques code q
 
 ## 🛠️ Technical Challenges & Solutions
 
-### 1. The "UI Cooking" Problem (Assembly Code Stress Test)
+### 1. The Assembly Code Stress Test
 **Challenge:** Pasting 1000+ lines of low-level Assembly code caused the UI to overflow, breaking the grid layout and making the "Roast" button inaccessible.
 **Solution:** Implemented **Scroll Containment** using CSS `max-height` and `overflow-y: auto` combined with `min-width: 0` on grid children to force internal scrolling without breaking the page wrapper.
 
